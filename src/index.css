@@ -1,0 +1,56 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background-color: #fff;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add styles for common components here */
+.container {
+  max-width: 1200px; /* Example container width */
+  margin: 0 auto; /* Centering the container */
+  padding: 20px; /* Padding inside the container */
+}
+
+/* Button styles */
+button {
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2563eb; /* Tailwind blue-600 */
+}
+
+/* Example for a card component */
+.card {
+  border: 1px solid #e5e7eb; /* Tailwind gray-300 */
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0; /* Margin between cards */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Example text styles */
+h1, h2, h3 {
+  color: #1f2937; /* Tailwind gray-800 */
+}
+
+p {
+  color: #4b5563; /* Tailwind gray-600 */
+}

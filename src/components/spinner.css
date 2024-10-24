@@ -1,0 +1,14 @@
+.spinner {
+    width: 56px; /* Width of the spinner */
+    height: 56px; /* Height of the spinner */
+    border-radius: 50%; /* Makes it circular */
+    background: conic-gradient(#0000 10%, #474bff); /* Creates a conic gradient with a transparent section and a colored section */
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0); /* Creates a mask effect to cut out the center */
+    animation: spinner-zp9dbg 1s infinite linear; /* Applies the spinning animation */
+}
+
+@keyframes spinner-zp9dbg {
+    to {
+        transform: rotate(1turn); /* Completes a full rotation */
+    }
+}
